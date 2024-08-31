@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-
+import './style.css'
 export const Users = () => {
 
     const [users, setUsers] = useState([])
@@ -23,14 +23,14 @@ export const Users = () => {
         .catch(err => console.log(err))
     }
   return (
-    <div className='bg-blue-500'>
+    <div className='content'>
 
 
-        <div>
-            <Link to={'/create'}>Add +</Link>
-            <table className='border p-5'>
-                <thead>
-                    <tr className='border'>
+        <div className='main'>
+            <Link to={'/create'} className='px-3 rounded-md bg-red-500 text-white'>Add +</Link>
+            <table className='table-auto p-5 rounded-xl  w-full'>
+                <thead className='rounded-xl'>
+                    <tr className='bg-blue-500 text-white'>
                         <th className='p-3'>Name</th>
                         <th className='p-3'>Email</th>
                         <th className='p-3'>Age</th>

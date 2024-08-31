@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Users } from "./Users";
 import { CreateUser } from "./CreateUser";
 import { UpdateUser } from "./UpdateUser";
-import { Try } from "./Try";
+import { NavBar } from "./NavBar";
+
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
     <>
     <div className="body">
     <BrowserRouter>
-    <Try />
+    <NavBar />
     <Routes>
       <Route path="/" element = {<Users />}></Route>
       <Route path="/create" element = {<CreateUser />}></Route>
