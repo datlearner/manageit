@@ -21,33 +21,33 @@ export const CreateUser = () => {
         .catch(err => console.log(err))
     }
   return (
-    <div className=''>
+    <div className='grid place-items-center align-middle h-96 sm:w-20 '>
 
-        <div className=''>
+        <div className='border w-96 p-5 '>
 
             <form onSubmit={Submit}>
-                <h2>Add User</h2>
+                <h2 className='p-3 border rounded-xl text-center text-blue-500 font-semibold'>Add User</h2>
                 <div className=''>
 
-                    <label htmlFor=''>Name</label>
-                    <input type='text' placeholder='Enter Name' className='form-control' onChange={(e) => setName(e.target.value)}></input>
+                    <label htmlFor='' className='py-4 '>Name</label>
+                    <input type='text' placeholder='Enter Name' className='form-control w-full bg-slate-200 rounded p-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 my-2' onChange={(e) => setName(e.target.value)}></input>
 
                 </div>
                 <div className=''>
 
                     <label htmlFor=''>Email</label>
-                    <input type='email' placeholder='Enter Email' className='form-control' onChange={(e) => setEmail(e.target.value)}></input>
+                    <input type='email' placeholder='Enter Email' className='form-control w-full bg-slate-200 rounded p-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 my-2' onChange={(e) => setEmail(e.target.value)}></input>
 
                 </div>
 
                 <div className=''>
 
                     <label htmlFor=''>Age</label>
-                    <input type='text' placeholder='Enter Age' className='form-control' onChange={(e) => setAge(e.target.value)}></input>
+                    <input type='text' placeholder='Enter Age' className='form-control w-full bg-slate-200 rounded p-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 my-2' onChange={(e) => setAge(e.target.value)}></input>
 
                 </div>
 
-                <button>Submit</button>
+                <button className='bg-green-500 rounded-md my-4 text-white p-1 w-32'>Submit</button>
 
             </form>
 

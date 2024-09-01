@@ -34,33 +34,33 @@ export const UpdateUser = () => {
     }
 
   return (
-    <div className=''>
+    <div className='grid place-items-center align-middle h-96 sm:w-20 '>
 
-    <div className=''>
+    <div className='border w-96 p-5 '>
 
         <form onSubmit={Update}>
-            <h2>Update User</h2>
+            <h2 className='p-3 border rounded-xl text-center text-blue-500 font-semibold'>Update User +</h2>
             <div className=''>
 
-                <label htmlFor=''>Name</label>
-                <input type='text' placeholder='Enter Name' className='form-control' value={name} onChange={(e) => setName(e.target.value)} />
+                <label htmlFor='' className='py-4 '>Name</label>
+                <input type='text' placeholder='Enter Name' className='form-control w-full bg-slate-200 rounded p-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 my-2' value={name} onChange={(e) => setName(e.target.value)} />
 
             </div>
             <div className=''>
 
                 <label htmlFor=''>Email</label>
-                <input type='email' placeholder='Enter Email' className='form-control' value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input type='email' placeholder='Enter Email' className='form-control w-full bg-slate-200 rounded p-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 my-2' value={email} onChange={(e) => setEmail(e.target.value)} />
 
             </div>
 
             <div className=''>
 
                 <label htmlFor=''>Age</label>
-                $<input type='text' placeholder='Enter Age' className='form-control' value={age} onChange={(e) => setAge(e.target.value)} />
+                <input type='text' placeholder='Enter Age' className='form-control w-full bg-slate-200 rounded p-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 my-2' value={age} onChange={(e) => setAge(e.target.value)} />
 
             </div>
 
-            <button>Update</button>
+            <button className='bg-pink-500 rounded-md my-4 text-white p-1 w-32'>Update</button>
 
         </form>
 

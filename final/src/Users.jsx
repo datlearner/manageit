@@ -23,12 +23,12 @@ export const Users = () => {
         .catch(err => console.log(err))
     }
   return (
-    <div className='content'>
+    <div className='content lg:w-full'>
 
 
         <div className='main'>
             <Link to={'/create'} className='px-3 rounded-md bg-red-500 text-white'>Add +</Link>
-            <table className='table-auto p-5 rounded-xl  w-full'>
+            <table className='tablee w-full p-2 rounded-xl'>
                 <thead className='rounded-xl'>
                     <tr className='bg-blue-500 text-white'>
                         <th className='p-3'>Name</th>
