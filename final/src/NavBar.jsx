@@ -1,5 +1,5 @@
 import './style.css';
-import manageit from '../src/manageit.svg'
+import manageit from '../src/manageit.svg';
 
 export const NavBar = () => {
   return (
@@ -8,7 +8,7 @@ export const NavBar = () => {
 
         <div className='logo'>
 
-          <h1 className='capitalize text-xl'> <span className='text-blue-500 font-black'>manage</span> it</h1>
+          <h1 className='capitalize text-xl'><span className='text-blue-500 font-black'>manage</span> it</h1>
 
         </div>
         <div className='navicon'>

@@ -6,8 +6,12 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useEffect } from 'react';
 
+/*
+hook in React that performs an asynchronous operation to fetch user data from an API using Axios.
+*/
+
 export const UpdateUser = () => {
-    const {id} = useParams()
+    const {id} = useParams();
     const [name, setName] = useState();
     const [email, setEmail] = useState()
     const [age, setAge] = useState()

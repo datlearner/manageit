@@ -5,6 +5,10 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import './style.css'
+import { RiDeleteBinLine } from "react-icons/ri";
+import { MdModeEditOutline } from "react-icons/md";
+
+
 export const Users = () => {
 
     const [users, setUsers] = useState([])
@@ -43,12 +47,12 @@ export const Users = () => {
                             
                             return <tr>
                                 <td>{user.name}</td>
-                                <td>{user.email}</td>
+                                <td className='p-2'>{user.email}</td>
                                 <td>{user.age}</td>
                                 
-                                <td>
-                                <Link to={`/update/${user._id}`}>Update</Link>
-                                <button onClick={(e) => handleDelete(user._id)}>Delete</button>
+                                <td className='flex justify-center m-3'>
+                                <Link to={`/update/${user._id}`} className='p-2 bg-yellow-300 rounded-lg mx-2'><MdModeEditOutline /></Link>
+                                <button onClick={(e) => handleDelete(user._id)} className='p-2 bg-gray-300 rounded-lg mx-2' ><RiDeleteBinLine /></button>
                                 </td>
                             </tr>
                         })
