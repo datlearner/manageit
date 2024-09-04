@@ -9,8 +9,8 @@ import { useState } from 'react' // Import the useState hook
 import { Link } from 'react-router-dom' // Import Link component from react-router-dom for navigation
 import axios from 'axios' // Import axios for making HTTP requests
 import './style.css' // Importing the CSS file for styling
-import { RiDeleteBinLine } from "react-icons/ri"; // Importing the delete icon from react-icons library
-import { MdModeEditOutline } from "react-icons/md"; // Importing the edit icon from react-icons library
+import { RiDeleteBinLine } from "react-icons/ri";
+import { MdModeEditOutline } from "react-icons/md";
 
 // Users component to display the list of users
 export const Users = () => {
