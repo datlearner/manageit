@@ -1,9 +1,6 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
 
-// Disables the ESLint rules for requiring keys in JSX and for no-unused-vars
-// These lines are used to prevent ESLint from flagging these rules as issues.
-
 import React, { useEffect } from 'react' // Import React and the useEffect hook
 import { useState } from 'react' // Import the useState hook
 import { Link } from 'react-router-dom' // Import Link component from react-router-dom for navigation
