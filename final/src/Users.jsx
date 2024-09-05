@@ -9,7 +9,6 @@ import './style.css' // Importing the CSS file for styling
 import { RiDeleteBinLine } from "react-icons/ri";
 import { MdModeEditOutline } from "react-icons/md";
 
-// Users component to display the list of users
 export const Users = () => {
     const [users, setUsers] = useState([]) // State to store the list of users
 
