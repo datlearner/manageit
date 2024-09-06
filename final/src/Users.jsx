@@ -4,8 +4,8 @@
 import React, { useEffect } from 'react' // Import React and the useEffect hook
 import { useState } from 'react' // Import the useState hook
 import { Link } from 'react-router-dom' // Import Link component from react-router-dom for navigation
-import axios from 'axios' // Import axios for making HTTP requests
-import './style.css' // Importing the CSS file for styling
+import axios from 'axios'
+import './style.css'
 import { RiDeleteBinLine } from "react-icons/ri";
 import { MdModeEditOutline } from "react-icons/md";
 
