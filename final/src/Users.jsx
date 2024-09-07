@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
 
-import React, { useEffect } from 'react' // Import React and the useEffect hook
+import React, { useEffect } from 'react'
 import { useState } from 'react' // Import the useState hook
 import { Link } from 'react-router-dom' // Import Link component from react-router-dom for navigation
 import axios from 'axios'
