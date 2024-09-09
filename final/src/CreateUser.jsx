@@ -4,7 +4,6 @@
 import React, { useState } from 'react'; 
 
 import axios from 'axios'; 
-// Imports the axios library for making HTTP requests
 
 import { useNavigate } from 'react-router-dom'; 
 // Imports the useNavigate hook from react-router-dom for programmatic navigation
