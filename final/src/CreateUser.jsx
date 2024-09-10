@@ -41,7 +41,7 @@ export const CreateUser = () => {
         })
 
         .catch(err => console.log(err)); 
-        // Logs any error that occurs during the request
+
     };
 
     return (
