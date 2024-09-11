@@ -49,7 +49,6 @@ export const CreateUser = () => {
             {/* Centers the form container on the screen using grid layout */}
 
             <div className='border w-96 p-5 '>
-                {/* Creates a bordered container for the form with padding */}
 
                 <form onSubmit={Submit}>
                     {/* The form element, on submission it calls the Submit function */}
