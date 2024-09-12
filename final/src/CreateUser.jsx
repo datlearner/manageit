@@ -46,7 +46,6 @@ export const CreateUser = () => {
 
     return (
         <div className='grid place-items-center align-middle h-96 sm:w-20 '>
-            {/* Centers the form container on the screen using grid layout */}
 
             <div className='border w-96 p-5 '>
 
