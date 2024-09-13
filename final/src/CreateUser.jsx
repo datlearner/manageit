@@ -50,7 +50,6 @@ export const CreateUser = () => {
             <div className='border w-96 p-5 '>
 
                 <form onSubmit={Submit}>
-                    {/* The form element, on submission it calls the Submit function */}
 
                     <h2 className='p-3 border rounded-xl text-center text-blue-500 font-semibold'>
                         Add User
