@@ -14,7 +14,7 @@ export const Users = () => {
 
     // useEffect hook to fetch the list of users when the component is mounted
     useEffect(() => {
-        axios.get('http://localhost:3000') // Send GET request to fetch users from the server
+        axios.get('http://localhost:3000')
             .then(result => setUsers(result.data)) // Update the users state with the fetched data
             .catch(err => console.log(err)) // Log any errors to the console
     }, []) // Empty dependency array ensures this effect runs only once when the component mounts
