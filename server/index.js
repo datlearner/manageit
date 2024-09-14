@@ -26,7 +26,7 @@ app.get('/getUser/:id', (req,res) => {
     .then(users => res.json(users))
     .catch(err => res.json(err))
 })
-
+/**/
 
 app.put('/updateUser/:id',  (req,res) => {
     const id = req.params.id;
