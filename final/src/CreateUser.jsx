@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */ 
-// Disables the ESLint rule that warns about unused variables
 
 import React, { useState } from 'react'; 
 
