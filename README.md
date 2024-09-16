@@ -8,5 +8,4 @@ Features
 
 Error handling and form validation
 Responsive design for mobile and desktop
-Deployed on netflify
 
