@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 
 app.use(express.json());
-
+// connect to moongose
 mongoose.connect('mongodb://localhost:27017/crud')
 
 app.get('/', (req, res) => {
