@@ -12,7 +12,6 @@ import { MdModeEditOutline } from "react-icons/md";
 export const Users = () => {
     const [users, setUsers] = useState([]) // State to store the list of users
 
-    // useEffect hook to fetch the list of users when the component is mounted
     useEffect(() => {
         axios.get('http://localhost:3000')
             .then(result => setUsers(result.data)) // Update the users state with the fetched data
