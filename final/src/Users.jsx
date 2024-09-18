@@ -15,7 +15,7 @@ export const Users = () => {
     useEffect(() => {
         axios.get('http://localhost:3000')
             .then(result => setUsers(result.data)) // Update the users state with the fetched data
-            .catch(err => console.log(err)) // Log any errors to the console
+            .catch(err => console.log(err))
     }, []) // Empty dependency array ensures this effect runs only once when the component mounts
 
     // Function to handle user deletion
