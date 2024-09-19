@@ -18,11 +18,10 @@ export const Users = () => {
             .catch(err => console.log(err))
     }, []) // Empty dependency array ensures this effect runs only once when the component mounts
 
-    // Function to handle user deletion
     const handleDelete = (id) => {
         axios.delete('http://localhost:3000/deleteUser/'+ id) // Send DELETE request to remove the user with the specified id
         .then(res => {
-            console.log(res) // Log the response to the console
+            console.log(res)
             window.location.reload() // Reload the page to update the users list
         })
         .catch(err => console.log(err)) // Log any errors to the console
