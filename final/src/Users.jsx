@@ -2,8 +2,8 @@
 /* eslint-disable no-unused-vars */
 
 import React, { useEffect } from 'react'
-import { useState } from 'react' // Import the useState hook
-import { Link } from 'react-router-dom' // Import Link component from react-router-dom for navigation
+import { useState } from 'react' 
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 import './style.css'
 import { RiDeleteBinLine } from "react-icons/ri";
@@ -50,8 +50,8 @@ export const Users = () => {
                                         <td className='p-2'>{user.email}</td>
                                         <td>{user.age}</td>
                                         <td className='flex justify-center m-3'>
-                                            <Link to={`/update/${user._id}`} className='p-2 bg-yellow-300 rounded-lg mx-2'><MdModeEditOutline /></Link> {/* Link to the update user page */}
-                                            <button onClick={() => handleDelete(user._id)} className='p-2 bg-gray-300 rounded-lg mx-2' ><RiDeleteBinLine /></button> {/* Button to delete the user */}
+                                            <Link to={`/update/${user._id}`} className='p-2 bg-yellow-300 rounded-lg mx-2'><MdModeEditOutline /></Link>
+                                            <button onClick={() => handleDelete(user._id)} className='p-2 bg-gray-300 rounded-lg mx-2' ><RiDeleteBinLine /></button>
                                         </td>
                                     </tr>
                                 )
